@@ -1,0 +1,40 @@
+.header {
+    background-color: #EEEFF1;
+    padding: 72px 0px;
+}
+
+.header__logo {
+    width: 84px;
+    float: left;
+    display: block;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__nav {
+    float: right;
+}
+
+.headre__nav ul {
+    list-style: none;
+}
+
+.header__nav li {
+    float: right;
+    margin-right: 42px;
+}
+
+.header__nav li:last-of-type {
+    margin-right: 0px;
+}
+
+.header__item {
+    text-transform: uppercase;
+}
+
+.header__item_active {
+    color: #34547A;
+    font-weight: 500;
+}
