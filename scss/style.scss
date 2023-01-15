@@ -9,25 +9,34 @@
 body {
     font-family: "Roboto";
     font-size: 16px;
-    color: #727272;
+    color: $color-text-primery;
     line-height: 164%;
 }
 
 .wrapper {
-    width: 1100px;
     margin: 0px auto;
+    width: calc(100% - 60px);
+    max-width: $wrapper-weight;
+
+    @media (max-width: 576px) {
+        width: calc(100% - 30px);
+    }
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: $color-black;
 }
 
 h1 {
-    color: #000000;
+    color: $color-black;
     font-size: 48px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
+    color: $color-black;
+}
+
+.clearfix {
+    clear: both;
 }
