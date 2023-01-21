@@ -49,14 +49,16 @@
 .header {
      
     @media (max-width: $tablet) {
+
+        &__nav, &__logo {
+            float: none;
+        }
         
         &__logo {
-            float: none; 
             margin: 0 auto;      
         }
 
         &__nav {
-            float: none;
             width: max-content;
             margin: 18px auto 0; 
 
@@ -78,6 +80,7 @@
 
             li {
                 float: none;
+                margin-right: 0;
             }
         }
     }

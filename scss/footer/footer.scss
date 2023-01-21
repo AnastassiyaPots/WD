@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color-primery;
+    color: $color-white;
+    flex: 0 0 auto;
+    padding: 50px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    &__socialname {
+        font-size: 21px;
+        font-weight: $medium;
+    }
+
+    &__copyright {
+        font-size: 13px;
+    }
+
+    &__socials {
+        display: flex;
+        column-gap: 8px;
+    }
+}
+
+.footer {
+    @media (max-width: $mobile) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
