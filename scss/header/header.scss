@@ -2,10 +2,19 @@
     background-color: $color-backgraund;
     padding: 72px 0;
 
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+        align-items: center;
+    }
+
     &__logo {
-        float: left;
         width: 85px;
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
 
         img {
             width: 100%; 
@@ -13,20 +22,17 @@
     }
 
     &__nav {
-        float: right;
 
         ul {
             list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 42px;
+            flex-shrink: 0;
         }
 
-        li {
-            float: left;
-            margin-right: 42px;
-
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
     }
 
     &__item {
@@ -50,37 +56,23 @@
      
     @media (max-width: $tablet) {
 
-        &__nav, &__logo {
-            float: none;
-        }
+       .wrapper{
+            flex-direction: column;
+            row-gap: 34px;
+       }
         
-        &__logo {
-            margin: 0 auto;      
-        }
-
-        &__nav {
-            width: max-content;
-            margin: 18px auto 0; 
-
-            li {
-                margin-right: 22px;
-            }
-        }
     }
 
     @media (max-width: $mobile) {
 
         padding: 36px 0;
 
-
-
         &__nav {
 
             text-align: center;
 
-            li {
-                float: none;
-                margin-right: 0;
+            ul {
+                flex-direction: column;
             }
         }
     }

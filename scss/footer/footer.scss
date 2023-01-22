@@ -34,9 +34,13 @@
 .footer {
     @media (max-width: $mobile) {
         .wrapper {
-            display: flex;
-            flex-direction: column;
-            
+            flex-direction: column-reverse;
+            row-gap: 20px; 
+        }
+
+        &__info {
+            text-align: center;
+            row-gap: 4px;
         }
     }
 }
