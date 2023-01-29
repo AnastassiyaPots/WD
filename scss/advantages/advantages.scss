@@ -1,0 +1,48 @@
+.advantages {
+    padding: 100px 0;
+    background-color: $color-primery;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 47px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 50px 0;
+    }
+}
+
+.advantage {
+    display: flex;
+    column-gap: 20px;
+    color: $color-white;
+    line-height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    &__image {
+        width: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    &__number {
+        font-size: 21px;
+        font-weight: $medium;
+    }
+
+    &__title {
+        font-size: 16px;
+    }
+}
