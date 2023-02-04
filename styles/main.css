@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px 42px;
+  gap: 8px 22px;
   flex-shrink: 0;
 }
 .header__item {
@@ -245,6 +245,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .advantage__title {
   font-size: 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+.gallery a {
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery a img {
+  opacity: 0;
+  width: 1px;
 }
 
 .button {
