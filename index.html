@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WD</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
     <header class="header">
@@ -118,39 +123,65 @@
                     <h2>Как я работаю</h2>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                 </div>
-                <div class="about__video">
+               <!--  <div class="about__video">
                     <video controls>
                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                         <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
                       Your browser does not support the video tag.
                       </video>
-                </div>
+                </div> -->
+                <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="about__video" data-fancybox="">
+                    <img src="/images/about.jpg" alt="">
+                </a>
             </div>
         </section>
 
         <section class="gallery">
-            <a href="#" style="background-image: url(/images/gallery/gallery-1.jpg);">
+            <a href="/images/gallery/gallerybig-1.jpg"
+            data-fancybox 
+                class="gallery__item">
                 <img src="/images/gallery/gallery-1.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-2.jpg);">
+
+            <a href="/images/gallery/gallerybig-2.jpg"
+                data-fancybox  
+                class="gallery__item gallery__item_width2">
             <img src="/images/gallery/gallery-2.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-3.jpg);">
+
+            <a href="/images/gallery/gallerybig-3.jpg" 
+                data-fancybox     
+                class="gallery__item gallery__item_width2">
                 <img src="/images/gallery/gallery-3.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-4.jpg);">
+
+            <a href="/images/gallery/gallerybig-4.jpg"
+                data-fancybox  
+                class="gallery__item gallery__item_height2">
                 <img src="/images/gallery/gallery-4.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-5.jpg);">
+
+            <a href="/images/gallery/gallerybig-5.jpg"
+                data-fancybox 
+                class="gallery__item">
                 <img src="/images/gallery/gallery-5.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-6.jpg);">
+
+            <a href="/images/gallery/gallerybig-6.jpg"
+                data-fancybox 
+                class="gallery__item gallery__item_width2">
                 <img src="/images/gallery/gallery-6.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-7.jpg);">
+
+            <a href="/images/gallery/gallerybig-7.jpg"
+                data-fancybox 
+                class="gallery__item">
                 <img src="/images/gallery/gallery-7.jpg" alt="">
             </a>
-            <a href="#" style="background-image: url(/images/gallery/gallery-8.jpg);">
+
+            <a href="/images/gallery/gallerybig-8.jpg"
+                data-fancybox 
+                class="gallery__item">
                 <img src="/images/gallery/gallery-8.jpg" alt="">
             </a>
         </section>
@@ -171,8 +202,8 @@
         </div>
     </footer>
 
-    
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 </body>
 </html>
